@@ -11,6 +11,8 @@ public class Main {
                 new Hospital("BeHealthy", "New York", 1000);
         Hospital h2 =
                 new Hospital("Medicer", "Astana", 350);
+        Hospital h3 =
+                new Hospital("Hospital", "Almaty", 50);
 
 
         // Output to console

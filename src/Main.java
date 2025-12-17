@@ -14,13 +14,34 @@ public class Main {
         Hospital h3 =
                 new Hospital("Hospital", "Almaty", 50);
 
-
-        // Output to console
         p1.displayInfo();
         p2.displayInfo();
         d1.displayInfo();
         d2.displayInfo();
         h1.displayInfo();
         h2.displayInfo();
+        h3.displayInfo();
+
+
+        if (p1.compareTo(p2) > 0) {
+            System.out.println(p1.getName() + " is older than " + p2.getName());
+        } else {
+            System.out.println(p2.getName() + " is older than " + p1.getName());
+        }
+
+        if(h1.compareTo(h2)==1){
+            if(h1.compareTo(h3)==1){
+                System.out.println(h1.getHospitalName()+" is the largest");
+            }else{
+                System.out.println(h3.getHospitalName()+" is the largest");
+            }
+        }else{
+            if(h2.compareTo(h3)==1){
+                System.out.println(h2.getHospitalName()+" is the largest");
+            }else{
+                System.out.println(h3.getHospitalName()+" is the largest");
+            }
+        }
+
     }
 }

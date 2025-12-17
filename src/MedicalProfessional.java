@@ -38,7 +38,6 @@ public class MedicalProfessional {
         System.out.println(this);
     }
 
-    @Override
     public String toString() {
         return "MedicalProfessional [ID=" + staffId +
                 ", Name=" + name +

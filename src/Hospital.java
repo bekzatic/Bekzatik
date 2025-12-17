@@ -9,7 +9,6 @@ public class Hospital {
         this.capacity = capacity;
     }
 
-    // Getters and Setters
     public String getHospitalName() {
         return hospitalName;
     }
@@ -37,8 +36,10 @@ public class Hospital {
     public void displayInfo() {
         System.out.println(this);
     }
+    public int compareTo(Hospital other) {
+        return Integer.compare(this.capacity, other.capacity);
+    }
 
-    @Override
     public String toString() {
         return "Hospital [Name=" + hospitalName +
                 ", Location=" + location +

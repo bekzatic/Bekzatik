@@ -4,7 +4,6 @@ public class Patient {
     private int age;
     private String diagnosis;
 
-    // Constructor
     public Patient(int patientId, String name, int age, String diagnosis) {
         this.patientId = patientId;
         this.name = name;
@@ -12,7 +11,6 @@ public class Patient {
         this.diagnosis = diagnosis;
     }
 
-    // Getters and Setters
     public int getPatientId() {
         return patientId;
     }
@@ -45,17 +43,18 @@ public class Patient {
         this.diagnosis = diagnosis;
     }
 
-    // Method
     public void displayInfo() {
         System.out.println(this);
     }
+    public int compareTo(Patient other) {
+        return Integer.compare(this.age, other.age);
+    }
 
-    // toString method
-    @Override
     public String toString() {
         return "Patient [ID=" + patientId +
                 ", Name=" + name +
                 ", Age=" + age +
                 ", Diagnosis=" + diagnosis + "]";
     }
+
 }

@@ -46,6 +46,7 @@ public class Patient {
     public void displayInfo() {
         System.out.println(this);
     }
+
     public int compareTo(Patient other) {
         return Integer.compare(this.age, other.age);
     }
